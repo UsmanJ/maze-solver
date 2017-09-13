@@ -14,4 +14,6 @@ const NotFound = (props) => {
   );
 };
 
+export default NotFound;
+
 NotFound.defaultProps = { className: '' };
