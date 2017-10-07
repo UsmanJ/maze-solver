@@ -1,7 +1,7 @@
 const ROUTES =
   process.env.NODE_ENV === 'development'
     ? {
-      BaseURL: 'localhost:9000',
+      BaseURL: 'http://localhost:9000',
     }
     : null;
 

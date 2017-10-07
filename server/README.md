@@ -1,31 +1,33 @@
-# node-js clinic API
+# Maze API
 
 ## Synopsis
 
-This is an API built using NodeJS. It allows a client to retrieve clinic information in the UK based on a UK postcode or a UK city. 
+This is an API built using NodeJS. It finds the solution in a Maze. The API is provided a start co-ordinates and a Maze structure which contains the end location.
 
-Currently the data being used is a subset of example data taken from data.gov.uk.
+An example is below:
+
+{
+	"mazeArray": [
+	  ["", "", "", "X", "X", "X"],
+	  ["X", "X", "", "", "X", "X"],
+	  ["X", "X", "X", "", "X", "X"],
+	  ["X", "X", "X", "", "X", "X"],
+	  ["X", "X", "X", "", "X", "X"],
+	  ["X", "X", "X", "", "", "G"]
+	],
+	"startX": 1,
+	"startY": 1
+}
 
 ## Technologies Used
 
 * NodeJS
 * Express
-* Chai
-* Mocha
-* Babel
 
 ## Build & development
 
-After cloning the repo, go into the root folder of the project and:
+After cloning the repo, go into the server folder of the project and:
 
 * Run `npm install`
 
 * Run `npm start`
-
-* Go to [localhost:3000/clinics/postcode/cr0 6SD](localhost:3000/clinics/postcode/cr0 6SD) to test the postcode api
-
-* Go to [localhost:3000/clinics/city/Croydon](localhost:3000/clinics/city/Croydon) to test the city api
-
-## Testing
-
-* Running `npm test` will run the unit tests with mocha and chai.

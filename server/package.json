@@ -1,7 +1,7 @@
 {
-  "name": "clinics",
+  "name": "maze-app",
   "version": "1.0.0",
-  "description": "UK clinics data",
+  "description": "Maze App Backend",
   "main": "app.js",
   "scripts": {
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
@@ -11,6 +11,7 @@
   "author": "Usman Jamil",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "chai": "^4.1.2",
     "chai-http": "^3.0.0",
     "express": "^4.15.4",
