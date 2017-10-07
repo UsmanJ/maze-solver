@@ -3,16 +3,12 @@ export let rows;
 export let cols;
 
 export const setupMaze = mazeArr => {
-  // return new Promise((resolve, reject) => {
   mazeArray = mazeArr;
   rows = mazeArray[0].length - 1;
   cols = mazeArray.length - 1;
-  //   resolve();
-  // });
 };
 
 export const solveMaze = (xVal, yVal) => {
-  // return new Promise((resolve, reject) => {
   let solved = false;
 
   if (yVal < cols) {
@@ -31,16 +27,9 @@ export const solveMaze = (xVal, yVal) => {
   if (right == "G" || left == "G" || up == "G" || down == "G") {
     mazeArray[xVal][yVal] = "D";
     return mazeArray;
-    // setTimeout(() => {
-    //   console.log("will now resolve!");
-    //   resolve(mazeArray);
-    // }, 1000);
   }
 
-  // if (mazeArray[xVal][yVal] === "G") {
   mazeArray[xVal][yVal] = "D";
-  //   return mazeArray;
-  // }
 
   if (right === "." && !solved) {
     solved = solveMaze(xVal, yVal + 1);
@@ -58,5 +47,4 @@ export const solveMaze = (xVal, yVal) => {
     mazeArray[xVal][yVal] = ".";
   }
   return solved;
-  // });
 };
