@@ -8,18 +8,18 @@ An example of how to enter the maze structure in the text area is given below:
 
 Input
 
-..XXX
-X.XXX
-X.XXX
-X.XXX
-X...G
+..XXX  
+X.XXX  
+X.XXX  
+X.XXX  
+X...G  
 
 Output
 
-DDXXX
-XDXXX
-XDXXX
-XDXXX
+DDXXX  
+XDXXX  
+XDXXX  
+XDXXX  
 XDDDG
 
 ## Technologies Used
