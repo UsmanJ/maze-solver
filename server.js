@@ -5,6 +5,11 @@ import { setupMaze, solveMaze } from "./controllers/maze";
 const app = express();
 const port = process.env.PORT || 9000;
 
+// Express only serves static assets in production
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
+
 app.use(bodyParser.json());
 
 app.use(function(req, res, next) {

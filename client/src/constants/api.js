@@ -3,6 +3,8 @@ const ROUTES =
     ? {
       BaseURL: 'http://localhost:9000',
     }
-    : null;
+    : {
+      BaseURL: 'https://maze-solver-app.herokuapp.com',
+    };
 
 export { ROUTES }; // eslint-disable-line import/prefer-default-export

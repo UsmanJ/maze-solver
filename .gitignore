@@ -2,14 +2,14 @@
 
 # dependencies
 /client/node_modules
-/server/node_modules
+/node_modules
 /server/package-lock.json
 
 # testing
 /coverage
 
 # production
-/server/dist
+/dist
 
 # misc
 .DS_Store
