@@ -30,17 +30,17 @@ The API is built using NodeJS. When provided start co-ordinates and a Maze struc
 
 An example of the input is below:
 
-{
-	"mazeArray": [
-	  ["", "", "", "X", "X", "X"],
-	  ["X", "X", "", "", "X", "X"],
-	  ["X", "X", "X", "", "X", "X"],
-	  ["X", "X", "X", "", "X", "X"],
-	  ["X", "X", "X", "", "X", "X"],
-	  ["X", "X", "X", "", "", "G"]
-	],
-	"startX": 1,
-	"startY": 1
+{  
+	"mazeArray": [  
+	  ["", "", "", "X", "X", "X"],  
+	  ["X", "X", "", "", "X", "X"],  
+	  ["X", "X", "X", "", "X", "X"],  
+	  ["X", "X", "X", "", "X", "X"],  
+	  ["X", "X", "X", "", "X", "X"],  
+	  ["X", "X", "X", "", "", "G"]  
+	],  
+	"startX": 1,  
+	"startY": 1  
 }
 
 
